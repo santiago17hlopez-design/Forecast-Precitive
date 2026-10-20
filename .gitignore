@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Client data — nothing real, ever
+/data/client/
+/clientes/
+*.pbix
+*.pbip
+config_cliente.json
+!config_cliente.example.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Generated artifacts - reproduce them with generate_sample_data.py.
+# Everything under data/ and output/ is generated, including subfolders.
+/data/**
+!/data/.gitkeep
+/output/**
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lnk
+.idea/
+.vscode/
